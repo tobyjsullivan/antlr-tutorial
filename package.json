@@ -1,0 +1,21 @@
+{
+  "name": "antlr-tutorial",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "author": "Toby Sullivan <tobyjsullivan@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "build-grammar": "antlr4ts -listener -visitor -o src/csv/ grammar/CSV.g4",
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "antlr4ts": "^0.5.0-alpha.4"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.23",
+    "antlr4ts-cli": "0.5.0-alpha.4",
+    "ts-node": "10.7.0",
+    "typescript": "4.6.3"
+  }
+}
